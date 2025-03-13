@@ -1,0 +1,113 @@
+{
+    "projects": {
+        "Core": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [],
+            "dependents": [
+                "Render",
+                "Engine",
+                "RenderApp",
+                "EngineApp"
+            ],
+            "guid": "15BC0A28-011A-7F56-7C57-7B66447B5D26",
+            "lib": true,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "Engine": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Core",
+                "Render"
+            ],
+            "dependents": [
+                "EngineApp",
+                "Gameplay"
+            ],
+            "guid": "58FF31B7-5513-0762-6C7D-15846C19234A",
+            "lib": true,
+            "pch": true,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "EngineApp": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Core",
+                "Engine",
+                "Render"
+            ],
+            "dependents": [],
+            "guid": "594A7765-1A0F-7953-0B30-764F03BB1C4B",
+            "lib": false,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": true
+        },
+        "Gameplay": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Engine"
+            ],
+            "dependents": [],
+            "guid": "595E734F-3CC0-2D4F-7CF0-52584CAE57AF",
+            "lib": false,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "Render": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Core"
+            ],
+            "dependents": [
+                "Engine",
+                "RenderApp",
+                "RenderApp",
+                "EngineApp"
+            ],
+            "guid": "58DE0DDB-1B41-5B69-5993-7C21728415A3",
+            "lib": true,
+            "pch": true,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": false
+        },
+        "RenderApp": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [],
+            "additionalLibraryDirectories": [],
+            "dependencies": [
+                "Render",
+                "Core"
+            ],
+            "dependents": [],
+            "guid": "6F3E28E8-4AB6-79DA-6BF5-1F7E0E0572F9",
+            "lib": false,
+            "pch": false,
+            "preprocessorDefinitions": [],
+            "vcpkg": false,
+            "window": true
+        }
+    },
+    "solution_guid": "57FD3CD3-4C4E-0599-7D79-59C12B9D2AA1",
+    "solution_name": "NewGCEngine",
+    "startup_project": "RenderApp",
+    "version": "1.17.4"
+}
